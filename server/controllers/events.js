@@ -12,7 +12,7 @@ module.exports = {
     if (!events.length) {
       throw httpError(400);
     }
-
+// comment
     events.forEach(e => (e.user = req.user._id));
 
     // insertMany result doesn't populate user display name
